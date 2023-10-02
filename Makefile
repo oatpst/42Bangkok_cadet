@@ -6,7 +6,7 @@
 #    By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/07 15:06:48 by pwanakit          #+#    #+#              #
-#    Updated: 2023/10/03 02:45:18 by pwanakit         ###   ########.fr        #
+#    Updated: 2023/10/03 03:15:33 by pwanakit         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,12 +33,10 @@ CC = cc
 
 RM = rm -f
 
-HEADER = ./
-
 CFLAGS = -Wall -Wextra -Werror -I ${LOCAL_HEADER_PATH}
 
 .c.o:		$(SRCS)
-			$(CC) -c $(CFLAGS) $^ -o $@
+			$(CC) $(CFLAGS) -c $^ -o $@
 
 all:		$(NAME)
 
