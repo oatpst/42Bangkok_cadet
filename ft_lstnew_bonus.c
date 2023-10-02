@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew_bonus.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/13 15:59:03 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/09/13 18:48:48 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/03 03:00:20 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
