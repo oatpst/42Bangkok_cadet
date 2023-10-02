@@ -6,7 +6,7 @@
 /*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:17:29 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:00:58 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/03 04:35:11 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,12 +15,12 @@
 char	*ft_strdup(const char *s1)
 {
 	char	*dst;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	if (!s1)
 		return (NULL);
-	dst = malloc(sizeof(char) * ft_strlen(s1 + 2));
+	dst = malloc(sizeof(char) * ft_strlen(s1) + 1);
 	if (dst == NULL)
 		return (NULL);
 	while (s1[i])
