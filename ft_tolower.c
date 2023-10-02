@@ -6,7 +6,7 @@
 /*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:17:43 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/09/07 17:24:14 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/02 17:28:41 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_tolower(int c)
 {
-	if (c >= 'A' || c <= 'Z')
+	if (c >= 'A' && c <= 'Z')
 		return (c + 32);
 	else
 		return (c);

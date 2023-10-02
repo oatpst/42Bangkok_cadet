@@ -6,13 +6,13 @@
 /*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:43:22 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/09/13 18:35:55 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/02 19:20:16 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_words(const char *str, char c)
+int	count_words(const char *str, char c)
 {
 	int	i;
 	int	trigger;
@@ -33,7 +33,7 @@ static int	count_words(const char *str, char c)
 	return (i);
 }
 
-static char	*word_dup(const char *str, int start, int end)
+char	*word_dup(const char *str, int start, int end)
 {
 	char	*word;
 	int		i;

@@ -6,7 +6,7 @@
 /*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:42:51 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/09/13 18:05:19 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/02 19:13:43 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ size_t	str_numlen(long nb)
 		nb /= 10;
 		len++;
 	}
-	return (len);
+	return (len + 1);
 }
 
 char	*ft_itoa(int n)

@@ -6,7 +6,7 @@
 /*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:17:45 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/09/07 17:31:11 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/02 17:28:44 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_toupper(int c)
 {
-	if (c >= 'a' || c <= 'z')
+	if (c >= 'a' && c <= 'z')
 		return (c - 32);
 	return (c);
 }
