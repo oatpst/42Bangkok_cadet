@@ -3,14 +3,16 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+         #
+#    By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/09/07 15:06:48 by pwanakit          #+#    #+#              #
-#    Updated: 2023/10/02 19:29:26 by pwanakit         ###   ########.fr        #
+#    Updated: 2023/10/03 02:45:18 by pwanakit         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
+
+LOCAL_HEADER_PATH = ./
 
 SRCS += ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c ft_isascii.c
 SRCS += ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c ft_memcmp.c ft_memcpy.c
@@ -31,22 +33,20 @@ CC = cc
 
 RM = rm -f
 
-AR = ar rcs
-
 HEADER = ./
 
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Wextra -Werror -I ${LOCAL_HEADER_PATH}
 
 .c.o:		$(SRCS)
-			$(CC) $(CFLAGS) -c $< -I $(HEADER) -o $(<:.c=.o)
+			$(CC) -c $(CFLAGS) $^ -o $@
 
 all:		$(NAME)
 
-$(NAME):	$(OBJ)
-			$(AR) -r $(NAME) $(SRCS)
+$(NAME):	$(OBJS)
+			$(AR) -r $@ $?
 
 bonus:		$(OBJS) $(BNS_OBJS)
-			$(AR) -r $(NAME) $(OBJS) $(BNS_OBJS)
+			$(AR) -r $(NAME) $?
 
 clean:
 			$(RM) $(OBJS) $(BNS_OBJS)
