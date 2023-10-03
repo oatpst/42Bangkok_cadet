@@ -6,7 +6,7 @@
 /*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:43:22 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:00:53 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/03 16:36:28 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,20 @@ int	count_words(const char *str, char c)
 		str++;
 	}
 	return (i);
+}
+
+char	**ft_free(char **splt)
+{
+	size_t	j;
+
+	j = 0;
+	while (splt[j])
+	{
+		free(splt[j]);
+		j++;
+	}
+	free(splt);
+	return (NULL);
 }
 
 char	*word_dup(const char *str, int start, int end)
@@ -63,10 +77,12 @@ char	**ft_split(const char *s, char c)
 	{
 		if (s[i] != c && index < 0)
 			index = i;
-		else if ((s[i] == c || i == ft_strlen(s)) && index > 0)
+		if ((s[i] == c || i == ft_strlen(s)) && index > 0)
 		{
 			split[j++] = word_dup(s, index, i);
 		}
+		if (split[j++] == NULL)
+			return (ft_free(split));
 		i++;
 	}
 	split[j] = 0;

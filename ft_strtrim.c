@@ -6,13 +6,13 @@
 /*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:43:51 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:01:25 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/03 16:55:35 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	match(const char *set, char c)
+int	match(const char *set, char c)
 {
 	size_t	i;
 
