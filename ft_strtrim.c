@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:43:51 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 16:55:35 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:08:35 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,3 +51,10 @@ char	*ft_strtrim(const char *s1, const char *set)
 	s2[i] = '\0';
 	return (s2);
 }
+
+// int	main()
+// {
+// 	ft_putstr_fd(ft_strtrim("Hi my name ello lol", "Hlo "), 1);
+// 	ft_putchar_fd('\n', 1);
+// 	ft_putstr_fd(ft_strtrim("HAlo", "Hlo "), 1);
+// }

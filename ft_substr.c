@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:43:55 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 17:10:31 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:08:48 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,8 @@ char	*ft_substr(const char *s, unsigned int start, size_t len)
 	ft_strlcpy(str, (char *)s + start, len + 1);
 	return (str);
 }
+
+// int	main()
+// {
+// 	ft_putstr_fd(ft_substr("Hello", 2, 2), 1);
+// }

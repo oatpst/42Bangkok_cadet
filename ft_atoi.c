@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:16:52 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 16:23:19 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 18:43:06 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,12 +42,10 @@ int	main(void)
 {
 	printf("User   result :\n");
 	printf("%d\n",ft_atoi(" ---+--+1234ab567"));
-	printf("%d\n",ft_atoi(" \n\r\t\f\v -+-+-+--2147483648"));
-	printf("%d\n",ft_atoi("-12345+2"));
+	printf("%d\n",atoi(" ---+--+1234ab567"));
 	printf("%d\n",ft_atoi(""));
-	printf("%d\n",ft_atoi("++- 123"));
-	printf("%d\n",ft_atoi(" a123"));
+	printf("%d\n",atoi(""));
 	printf("%d\n",ft_atoi("\t--123456789a"));
-	printf("%d\n",ft_atoi(" --++--2147483647"));
+	printf("%d\n",atoi("\t--123456789a"));
 	return (0);
 }*/

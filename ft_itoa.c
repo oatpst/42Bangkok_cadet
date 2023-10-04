@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:42:51 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:00:01 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 18:57:46 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,3 +58,13 @@ char	*ft_itoa(int n)
 	res[num_len] = '\0';
 	return (res);
 }
+
+// #include <stdio.h>
+// int	main()
+// {
+// 	printf("%s\n", ft_itoa(-321354363));
+// 	printf("%s\n", ft_itoa(2147483647));
+// 	printf("%s\n", ft_itoa(-2147483648));
+// 	printf("%s\n", ft_itoa(12));
+// 	printf("%s\n", ft_itoa(-2147483648));
+// }

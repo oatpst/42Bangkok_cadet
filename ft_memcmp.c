@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:17:18 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:00:27 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:03:43 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,12 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+
+// #include <string.h>
+// int	main()
+// {
+// 	const void	*s1 = "Hello World";
+// 	const void	*s2 = "Hello world";
+// 	ft_putnbr_fd(ft_memcmp(s1, s2, ft_strlen((const char *)s1)), 1);
+// 	ft_putnbr_fd(memcmp(s1, s2, ft_strlen((const char *)s1)), 1);
+// }

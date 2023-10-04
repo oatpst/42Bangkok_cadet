@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strjoin.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:43:33 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:01:03 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:06:20 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,3 +33,12 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	str[j] = '\0';
 	return (str);
 }
+
+// int	main()
+// {
+// 	char const	*s1 = "Hello ";
+// 	char const	*s2 = "World";
+// 	char	*s3 = ft_strjoin(s1, s2);
+
+// 	ft_putstr_fd(s3, 1);
+// }

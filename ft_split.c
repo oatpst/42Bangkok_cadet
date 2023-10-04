@@ -6,7 +6,7 @@
 /*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 16:43:22 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/04 17:23:45 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:05:11 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,3 +86,37 @@ char	**ft_split(const char *s, char c)
 	split[i] = NULL;
 	return (split);
 }
+
+// #include <stdio.h>
+// int		main()
+// {
+// 	char	**test;
+// 	size_t	i;
+
+// 	i = 0;
+// 	test = ft_split("Hello is it me you looking for", ' ');
+// 	while (test[i])
+// 	{
+// 		printf("%s\n", test[i]);
+// 		free(test[i]);
+// 		i++;
+// 	}
+// 	free(test);
+// }
+
+// #include <stdio.h>
+// int		main()
+// {
+// 	char	**test;
+// 	size_t	i;
+
+// 	i = 0;
+// 	test = ft_split("Hel lo!", ' ');
+// 	while (test[i])
+// 	{
+// 		printf("%s\n", test[i]);
+// 		free(test[i]);
+// 		i++;
+// 	}
+// 	free(test);
+// }

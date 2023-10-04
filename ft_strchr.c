@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:17:27 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:00:55 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:05:34 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,10 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (ptr);
 }
+
+// int	main()
+// {
+// 	const	char *s = "Hello World";
+// 	char	*r = ft_strchr(s, 'o');
+// 	ft_putstr_fd(r, 1);
+// }

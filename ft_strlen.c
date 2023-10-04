@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 15:47:25 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:01:11 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:06:59 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,3 +23,9 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+
+// int	main()
+// {
+// 	char	*s = "Hello";
+// 	ft_putnbr_fd(ft_strlen(s), 1);
+// }

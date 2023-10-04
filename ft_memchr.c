@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:17:16 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 03:00:25 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:02:53 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,11 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+
+// #include <stdio.h>
+// int	main()
+// {
+// 	const	void	*s = "Hello World";
+// 	unsigned char	*r = ft_memchr(s, 'l', strlen((const char*)s));
+// 	printf("%s", r);
+// }

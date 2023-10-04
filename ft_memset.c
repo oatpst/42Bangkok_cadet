@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 14:17:25 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 04:21:41 by pwanakit         ###   ########.fr       */
+/*   Updated: 2023/10/04 19:04:31 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,9 @@ void	*ft_memset(void *b, int c, size_t len)
 	}
 	return (b);
 }
+
+// #include <string.h>
+// int	main()
+// {
+// 	void	*b = ft_memset(b, 'k', 5);
+// }
