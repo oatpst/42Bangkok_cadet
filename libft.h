@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pwanakit <pwanakit@student.42bangkok.co    +#+  +:+       +#+        */
+/*   By: pwanakit <pwanakit@42bangkok.com>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/07 15:04:45 by pwanakit          #+#    #+#             */
-/*   Updated: 2023/10/03 04:06:59 by pwanakit         ###   ########.fr       */
+/*   Updated: 2024/04/02 19:17:37 by pwanakit         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <string.h>
 # include <limits.h>
 # include <stdint.h>
+# include <stdarg.h>
 
 typedef unsigned int	t_ui;
 
@@ -74,5 +75,14 @@ void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+
+int		ft_printf(const char *s, ...);
+int		ft_putnbr(long nb);
+int		ft_putnbr_u(unsigned int nb);
+int		ft_putnbr_x(unsigned long nb);
+int		ft_putnbr_xx(unsigned int nb);
+int		ft_putnbr_p(unsigned long nb);
+int		ft_putchar(char c);
+int		ft_putstr(char *str);
 
 #endif
